@@ -1,0 +1,13 @@
+<div class="container vh-100">
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex align-items-center flex-column justify-content-center vh-100">
+        <div *ngIf="weatherData" class="p-2 m-2 bg-info text-white shadow rounded-2 px-5 py-3">
+            <h2>{{ weatherData.name }}</h2>
+            <p>Temperature: {{ weatherData.main.temp }} C</p>
+            <p>Humidity: {{ weatherData.main.humidity }}%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
